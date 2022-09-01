@@ -21,11 +21,13 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = UIColor(red: 180/250, green: 207/250, blue: 176/250, alpha: 1)
+        
         imageOne.image = UIImage(named: "waterlily1")
         imageTwo.image = UIImage(named: "waterlily2")
         
-        imageOne.makeRounded()
-        imageTwo.makeRounded()
+        imageOne.setRound()
+        imageTwo.setRound()
         
         
         let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
@@ -60,12 +62,13 @@ class ViewController: UIViewController {
 
 extension UIImageView {
     
-    func makeRounded() {
+    func setRound() {
         
         self.layer.cornerRadius = (self.frame.height / 2)
         self.layer.masksToBounds = false
         self.layer.borderWidth = 1.0
-        self.layer.borderColor = UIColor.white.cgColor
+        self.layer.borderColor = UIColor.clear.cgColor
         self.clipsToBounds = true
+        
     }
 }
