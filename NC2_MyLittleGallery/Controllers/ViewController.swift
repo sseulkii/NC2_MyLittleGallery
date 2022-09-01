@@ -24,6 +24,10 @@ class ViewController: UIViewController {
         imageOne.image = UIImage(named: "waterlily1")
         imageTwo.image = UIImage(named: "waterlily2")
         
+        imageOne.makeRounded()
+        imageTwo.makeRounded()
+        
+        
         let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
         imageOne.isUserInteractionEnabled = true
         imageOne.addGestureRecognizer(tapGestureRecognizerOne)
@@ -54,3 +58,14 @@ class ViewController: UIViewController {
 
 }
 
+extension UIImageView {
+    
+    func makeRounded() {
+        
+        self.layer.cornerRadius = (self.frame.height / 2)
+        self.layer.masksToBounds = false
+        self.layer.borderWidth = 1.0
+        self.layer.borderColor = UIColor.white.cgColor
+        self.clipsToBounds = true
+    }
+}
