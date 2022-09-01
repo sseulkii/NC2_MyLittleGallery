@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "manet_portrait.jpeg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
