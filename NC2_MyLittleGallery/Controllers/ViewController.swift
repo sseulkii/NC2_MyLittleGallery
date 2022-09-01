@@ -48,14 +48,6 @@ class ViewController: UIViewController {
         } else {
             print("go to gallery")
         }
-        
-    }
-
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == k.segueChooseStyle {
-            let destinationVC = segue.destination as! StylesViewController
-            destinationVC.test = "tesing"
-        }
     }
 
 }
