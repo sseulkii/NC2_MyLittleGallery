@@ -9,6 +9,7 @@ import Foundation
 
 class K {
     
+    let segueChooseStyle = "chooseStyle"
     let segueShowImage = "showImage"
     let segueShowOnWall = "showOnWall"
     
@@ -17,8 +18,7 @@ class K {
     let renoir = "Renoir"
     let degas = "Degas"
     let manet = "Manet"
-    let pissaro = "Pissaro"
+    let pissarro = "Pissarro"
     let morisot = "Morisot"
     let sisley = "Sisley"
-    
 }

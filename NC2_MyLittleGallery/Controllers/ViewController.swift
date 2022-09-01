@@ -10,7 +10,7 @@ import UIKit
 // https://stackoverflow.com/questions/27880607/how-to-assign-an-action-for-uiimageview-object-in-swift
 class ViewController: UIViewController {
     
-    let constants = K()
+    let k = K()
     
     @IBOutlet weak var titleLabel: UILabel!
     
@@ -44,7 +44,7 @@ class ViewController: UIViewController {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
         
         if tappedImage == imageOne {
-            performSegue(withIdentifier: constants.segueShowImage, sender: self)
+            performSegue(withIdentifier: k.segueChooseStyle, sender: self)
         } else {
             print("go to gallery")
         }
@@ -52,8 +52,8 @@ class ViewController: UIViewController {
     }
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == constants.segueShowImage {
-            let destinationVC = segue.destination as! ImageViewController
+        if segue.identifier == k.segueChooseStyle {
+            let destinationVC = segue.destination as! StylesViewController
             destinationVC.test = "tesing"
         }
     }

@@ -17,13 +17,14 @@
 		11696BA628C0B09400E02249 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11696BA528C0B09400E02249 /* ARViewController.swift */; };
 		11696BAA28C0B14000E02249 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11696BA928C0B14000E02249 /* Constants.swift */; };
 		11696BB428C0B1E100E02249 /* MyStyleTransferManet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BAC28C0B1E000E02249 /* MyStyleTransferManet.mlmodel */; };
-		11696BB528C0B1E100E02249 /* MyStyleTransferPissaro.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BAD28C0B1E000E02249 /* MyStyleTransferPissaro.mlmodel */; };
+		11696BB528C0B1E100E02249 /* MyStyleTransferPissarro.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BAD28C0B1E000E02249 /* MyStyleTransferPissarro.mlmodel */; };
 		11696BB728C0B1E100E02249 /* MyStyleTransferMorisot.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BAF28C0B1E000E02249 /* MyStyleTransferMorisot.mlmodel */; };
 		11696BB828C0B1E100E02249 /* MyStyleTransferRenoir.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BB028C0B1E000E02249 /* MyStyleTransferRenoir.mlmodel */; };
 		11696BB928C0B1E100E02249 /* MyStyleTransferSisley.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BB128C0B1E100E02249 /* MyStyleTransferSisley.mlmodel */; };
 		11696BBA28C0B1E100E02249 /* MyStyleTransferDegas.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BB228C0B1E100E02249 /* MyStyleTransferDegas.mlmodel */; };
 		11696BBB28C0B1E100E02249 /* MyStyleTransferMonet.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BB328C0B1E100E02249 /* MyStyleTransferMonet.mlmodel */; };
 		11696BBD28C0B1FD00E02249 /* MyStyleTransferCassatt.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 11696BBC28C0B1FD00E02249 /* MyStyleTransferCassatt.mlmodel */; };
+		1180721E28C0E838009B4382 /* StylesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1180721D28C0E838009B4382 /* StylesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +40,14 @@
 		11696BA528C0B09400E02249 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		11696BA928C0B14000E02249 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		11696BAC28C0B1E000E02249 /* MyStyleTransferManet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferManet.mlmodel; sourceTree = "<group>"; };
-		11696BAD28C0B1E000E02249 /* MyStyleTransferPissaro.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferPissaro.mlmodel; sourceTree = "<group>"; };
+		11696BAD28C0B1E000E02249 /* MyStyleTransferPissarro.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferPissarro.mlmodel; sourceTree = "<group>"; };
 		11696BAF28C0B1E000E02249 /* MyStyleTransferMorisot.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferMorisot.mlmodel; sourceTree = "<group>"; };
 		11696BB028C0B1E000E02249 /* MyStyleTransferRenoir.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferRenoir.mlmodel; sourceTree = "<group>"; };
 		11696BB128C0B1E100E02249 /* MyStyleTransferSisley.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferSisley.mlmodel; sourceTree = "<group>"; };
 		11696BB228C0B1E100E02249 /* MyStyleTransferDegas.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferDegas.mlmodel; sourceTree = "<group>"; };
 		11696BB328C0B1E100E02249 /* MyStyleTransferMonet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferMonet.mlmodel; sourceTree = "<group>"; };
 		11696BBC28C0B1FD00E02249 /* MyStyleTransferCassatt.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MyStyleTransferCassatt.mlmodel; sourceTree = "<group>"; };
+		1180721D28C0E838009B4382 /* StylesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StylesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				11696B9228C0AEDE00E02249 /* ViewController.swift */,
+				1180721D28C0E838009B4382 /* StylesViewController.swift */,
 				11696BA228C0B06C00E02249 /* ImageViewController.swift */,
 				11696BA528C0B09400E02249 /* ARViewController.swift */,
 			);
@@ -125,7 +128,7 @@
 				11696BAC28C0B1E000E02249 /* MyStyleTransferManet.mlmodel */,
 				11696BB328C0B1E100E02249 /* MyStyleTransferMonet.mlmodel */,
 				11696BAF28C0B1E000E02249 /* MyStyleTransferMorisot.mlmodel */,
-				11696BAD28C0B1E000E02249 /* MyStyleTransferPissaro.mlmodel */,
+				11696BAD28C0B1E000E02249 /* MyStyleTransferPissarro.mlmodel */,
 				11696BB028C0B1E000E02249 /* MyStyleTransferRenoir.mlmodel */,
 				11696BB128C0B1E100E02249 /* MyStyleTransferSisley.mlmodel */,
 			);
@@ -209,8 +212,9 @@
 				11696BB428C0B1E100E02249 /* MyStyleTransferManet.mlmodel in Sources */,
 				11696BB728C0B1E100E02249 /* MyStyleTransferMorisot.mlmodel in Sources */,
 				11696BB828C0B1E100E02249 /* MyStyleTransferRenoir.mlmodel in Sources */,
-				11696BB528C0B1E100E02249 /* MyStyleTransferPissaro.mlmodel in Sources */,
+				11696BB528C0B1E100E02249 /* MyStyleTransferPissarro.mlmodel in Sources */,
 				11696BBB28C0B1E100E02249 /* MyStyleTransferMonet.mlmodel in Sources */,
+				1180721E28C0E838009B4382 /* StylesViewController.swift in Sources */,
 				11696BB928C0B1E100E02249 /* MyStyleTransferSisley.mlmodel in Sources */,
 				11696BBD28C0B1FD00E02249 /* MyStyleTransferCassatt.mlmodel in Sources */,
 				11696BA328C0B06C00E02249 /* ImageViewController.swift in Sources */,
