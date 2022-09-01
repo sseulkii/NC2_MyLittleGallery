@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1111664128C0FF2000DF05DD /* Lora-VariableFont_wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1111664028C0FF2000DF05DD /* Lora-VariableFont_wght.ttf */; };
 		11696B8F28C0AEDE00E02249 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11696B8E28C0AEDE00E02249 /* AppDelegate.swift */; };
 		11696B9128C0AEDE00E02249 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11696B9028C0AEDE00E02249 /* SceneDelegate.swift */; };
 		11696B9328C0AEDE00E02249 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11696B9228C0AEDE00E02249 /* ViewController.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1111664028C0FF2000DF05DD /* Lora-VariableFont_wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lora-VariableFont_wght.ttf"; sourceTree = "<group>"; };
 		11696B8B28C0AEDE00E02249 /* NC2_MyLittleGallery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NC2_MyLittleGallery.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11696B8E28C0AEDE00E02249 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11696B9028C0AEDE00E02249 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,9 +63,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1111663728C0FE0B00DF05DD /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				1111664028C0FF2000DF05DD /* Lora-VariableFont_wght.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
 		11696B8228C0AEDE00E02249 = {
 			isa = PBXGroup;
 			children = (
+				1111663728C0FE0B00DF05DD /* Fonts */,
 				11696B8D28C0AEDE00E02249 /* NC2_MyLittleGallery */,
 				11696B8C28C0AEDE00E02249 /* Products */,
 			);
@@ -196,6 +207,7 @@
 				11696B9B28C0AEDF00E02249 /* LaunchScreen.storyboard in Resources */,
 				11696B9828C0AEDF00E02249 /* Assets.xcassets in Resources */,
 				11696B9628C0AEDE00E02249 /* Main.storyboard in Resources */,
+				1111664128C0FF2000DF05DD /* Lora-VariableFont_wght.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
