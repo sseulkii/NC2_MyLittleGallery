@@ -168,17 +168,24 @@
                     <view key="view" contentMode="scaleToFill" id="oW3-91-MrN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTi-lZ-kbI">
+                                <rect key="frame" x="0.0" y="149" width="414" height="586"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wVm-he-IRj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" id="IY5-8c-oEZ"/>
                     <connections>
+                        <outlet property="imageView" destination="HTi-lZ-kbI" id="3DX-Kp-Twk"/>
                         <segue destination="1dE-f5-lFf" kind="show" identifier="showOnWall" id="Dx1-uP-q7i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3XQ-Pj-Ig9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="98"/>
+            <point key="canvasLocation" x="1921.7391304347827" y="97.767857142857139"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Hcx-Wo-ypi">
