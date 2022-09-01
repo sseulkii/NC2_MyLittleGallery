@@ -8,10 +8,13 @@
 import UIKit
 
 class ImageViewController: UIViewController {
+    
+    var test = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        print(test)
         // Do any additional setup after loading the view.
     }
     

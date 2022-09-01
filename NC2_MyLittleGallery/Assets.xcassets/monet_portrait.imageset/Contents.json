@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "monet_portrait.jpg",
+      "idiom" : "universal"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
