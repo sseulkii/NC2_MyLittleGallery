@@ -161,14 +161,14 @@
                     </view>
                     <navigationItem key="navigationItem" id="MPC-1c-A62"/>
                     <connections>
-                        <outlet property="cassattButton" destination="MKR-ZE-03C" id="r6i-Yj-BZr"/>
-                        <outlet property="degasButton" destination="dQm-dl-Q7a" id="Yhp-b3-fYn"/>
-                        <outlet property="manetButton" destination="EKM-go-Jwe" id="oju-ua-W5b"/>
-                        <outlet property="monetButton" destination="CdR-07-eyt" id="4Oi-Tr-1Yc"/>
-                        <outlet property="morisotButton" destination="tA4-1n-dpx" id="ia3-vz-xUa"/>
-                        <outlet property="pissarroButton" destination="1gW-Lu-mUc" id="ARa-9b-9i6"/>
-                        <outlet property="renoirButton" destination="zdD-Au-ICo" id="ME2-Cn-BjS"/>
-                        <outlet property="sisleyButton" destination="FlX-Ii-mbM" id="Ksk-GF-Rpt"/>
+                        <outletCollection property="artistImages" destination="CdR-07-eyt" collectionClass="NSMutableArray" id="xtS-I0-eou"/>
+                        <outletCollection property="artistImages" destination="dQm-dl-Q7a" collectionClass="NSMutableArray" id="TBo-ZX-0Xb"/>
+                        <outletCollection property="artistImages" destination="zdD-Au-ICo" collectionClass="NSMutableArray" id="4FG-bb-jOt"/>
+                        <outletCollection property="artistImages" destination="EKM-go-Jwe" collectionClass="NSMutableArray" id="qVc-fG-u4e"/>
+                        <outletCollection property="artistImages" destination="MKR-ZE-03C" collectionClass="NSMutableArray" id="fzw-bG-1TM"/>
+                        <outletCollection property="artistImages" destination="FlX-Ii-mbM" collectionClass="NSMutableArray" id="edB-ga-d5b"/>
+                        <outletCollection property="artistImages" destination="tA4-1n-dpx" collectionClass="NSMutableArray" id="651-KD-dez"/>
+                        <outletCollection property="artistImages" destination="1gW-Lu-mUc" collectionClass="NSMutableArray" id="ctv-fc-q3m"/>
                         <segue destination="ta9-Eg-4HF" kind="show" identifier="showImage" id="bSJ-xk-Aoo"/>
                     </connections>
                 </viewController>
