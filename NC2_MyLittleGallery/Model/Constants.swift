@@ -41,4 +41,8 @@ class K {
     let fontColor = "fontcolor"
     let accentColor = "accentcolor-1"
     
+    let waterLilies = ["waterlily1", "waterlily2"]
+    let pickStyle = "waterlily1"
+    let seeGallery = "waterlily2"
+    
 }

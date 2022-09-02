@@ -52,9 +52,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="OIf-HX-GCE"/>
                     <connections>
-                        <outlet property="imageOne" destination="trP-ri-57I" id="9PY-0V-OnE"/>
-                        <outlet property="imageTwo" destination="Eqm-5T-adM" id="E1z-JP-5op"/>
                         <outlet property="titleLabel" destination="w8O-Za-JGV" id="eDp-gI-k5n"/>
+                        <outletCollection property="imageViews" destination="trP-ri-57I" collectionClass="NSMutableArray" id="k2J-me-ltn"/>
+                        <outletCollection property="imageViews" destination="Eqm-5T-adM" collectionClass="NSMutableArray" id="uQQ-aW-CJa"/>
                         <segue destination="aBS-Pi-o8l" kind="show" identifier="chooseStyle" id="DTE-g3-sza"/>
                     </connections>
                 </viewController>

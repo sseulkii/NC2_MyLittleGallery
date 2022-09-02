@@ -14,36 +14,28 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     
-    @IBOutlet weak var imageOne: UIImageView!
-    
-    @IBOutlet weak var imageTwo: UIImageView!
+    @IBOutlet var imageViews: [UIImageView]!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         view.backgroundColor = UIColor(named: k.backgroundColor2)
-                
-        imageOne.image = UIImage(named: "waterlily1")
-        imageTwo.image = UIImage(named: "waterlily2")
         
-        imageOne.setRound()
-        imageTwo.setRound()
+        for i in 0..<imageViews.count {
+            imageViews[i].accessibilityLabel = k.waterLilies[i]
+            imageViews[i].image = UIImage(named: k.waterLilies[i])
+            imageViews[i].setRound()
+            let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
+            imageViews[i].isUserInteractionEnabled = true
+            imageViews[i].addGestureRecognizer(tapGestureRecognizer)
+        }
         
-        
-        let tapGestureRecognizerOne = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        imageOne.isUserInteractionEnabled = true
-        imageOne.addGestureRecognizer(tapGestureRecognizerOne)
-        
-        let tapGestureRecognizerTwo = UITapGestureRecognizer(target: self, action: #selector(imageTapped(tapGestureRecognizer:)))
-        imageTwo.isUserInteractionEnabled = true
-        imageTwo.addGestureRecognizer(tapGestureRecognizerTwo)
     }
     
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
-    {
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
         
-        if tappedImage == imageOne {
+        if tappedImage.accessibilityLabel == k.pickStyle {
             performSegue(withIdentifier: k.segueChooseStyle, sender: self)
         } else {
             print("go to gallery")

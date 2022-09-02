@@ -27,7 +27,6 @@ class StylesViewController: UIViewController, UIImagePickerControllerDelegate, U
         
         view.backgroundColor = UIColor(named: k.backgroundColor1)
         
-
         for i in 0..<artistImages.count {
             artistImages[i].accessibilityLabel = k.artistNames[i]
             artistImages[i].image = UIImage(named: k.artistNames[i])
@@ -43,8 +42,7 @@ class StylesViewController: UIViewController, UIImagePickerControllerDelegate, U
 
     }
     
-    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer)
-    {
+    @objc func imageTapped(tapGestureRecognizer: UITapGestureRecognizer) {
         let tappedImage = tapGestureRecognizer.view as! UIImageView
         
         switch tappedImage.accessibilityLabel {
