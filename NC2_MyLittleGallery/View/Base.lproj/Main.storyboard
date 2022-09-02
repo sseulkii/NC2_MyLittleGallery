@@ -184,13 +184,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HTi-lZ-kbI">
-                                <rect key="frame" x="0.0" y="149" width="414" height="586"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="42" translatesAutoresizingMaskIntoConstraints="NO" id="LWm-bA-wum">
+                                <rect key="frame" x="0.0" y="149" width="414" height="598"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="HTi-lZ-kbI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="525"/>
+                                    </imageView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="138" translatesAutoresizingMaskIntoConstraints="NO" id="O1Q-BP-Hby">
+                                        <rect key="frame" x="27.5" y="567" width="359" height="31"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jVA-wb-493">
+                                                <rect key="frame" x="0.0" y="0.0" width="110.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Save">
+                                                    <color key="baseForegroundColor" name="fontcolor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="savePressed:" destination="ta9-Eg-4HF" eventType="touchUpInside" id="g3x-Gn-4tV"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oaV-Ep-wgM">
+                                                <rect key="frame" x="248.5" y="0.0" width="110.5" height="31"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Show on Wall">
+                                                    <color key="baseForegroundColor" name="fontcolor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="showOnWall:" destination="ta9-Eg-4HF" eventType="touchUpInside" id="UVN-HF-Zwf"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="HTi-lZ-kbI" firstAttribute="leading" secondItem="LWm-bA-wum" secondAttribute="leading" id="xk0-qx-obH"/>
+                                </constraints>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="wVm-he-IRj"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="LWm-bA-wum" firstAttribute="leading" secondItem="oW3-91-MrN" secondAttribute="leading" id="5oG-mT-JHB"/>
+                            <constraint firstItem="LWm-bA-wum" firstAttribute="centerX" secondItem="oW3-91-MrN" secondAttribute="centerX" id="DO0-fQ-6bQ"/>
+                            <constraint firstItem="LWm-bA-wum" firstAttribute="top" secondItem="wVm-he-IRj" secondAttribute="top" constant="61" id="Hgm-Vh-5xA"/>
+                            <constraint firstItem="LWm-bA-wum" firstAttribute="centerY" secondItem="oW3-91-MrN" secondAttribute="centerY" id="OYe-7a-qaj"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IY5-8c-oEZ"/>
                     <connections>
@@ -209,14 +247,28 @@
                     <view key="view" contentMode="scaleToFill" id="AeR-O5-XiR">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <arscnView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RKn-Hv-KlM">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                            </arscnView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="HgR-cY-AA2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="RKn-Hv-KlM" firstAttribute="trailing" secondItem="HgR-cY-AA2" secondAttribute="trailing" id="YfS-C8-AJs"/>
+                            <constraint firstItem="RKn-Hv-KlM" firstAttribute="leading" secondItem="HgR-cY-AA2" secondAttribute="leading" id="mPM-HS-EvP"/>
+                            <constraint firstItem="RKn-Hv-KlM" firstAttribute="bottom" secondItem="HgR-cY-AA2" secondAttribute="bottom" id="uOx-zO-PJw"/>
+                            <constraint firstItem="RKn-Hv-KlM" firstAttribute="top" secondItem="HgR-cY-AA2" secondAttribute="top" id="vcg-bq-sqI"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Pq0-kv-X18"/>
+                    <connections>
+                        <outlet property="sceneView" destination="RKn-Hv-KlM" id="nLu-PW-o87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sqe-DP-a0L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2909" y="98"/>
+            <point key="canvasLocation" x="2908.6956521739135" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vhp-hb-fe5">
@@ -240,7 +292,7 @@
     </scenes>
     <resources>
         <namedColor name="fontcolor">
-            <color red="0.40000000000000002" green="0.49019607840000001" blue="0.49803921569999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.40000000596046448" green="0.49000000953674316" blue="0.49799999594688416" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
