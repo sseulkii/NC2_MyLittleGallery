@@ -25,4 +25,5 @@ class K {
     let backgroundColor1 = "backgroundcolor1"
     let backgroundColor2 = "backgroundcolor2"
     let fontColor = "fontcolor"
+    let accentColor = "accentcolor-1"
 }
