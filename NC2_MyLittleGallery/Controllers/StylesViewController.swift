@@ -33,7 +33,7 @@ class StylesViewController: UIViewController, UIImagePickerControllerDelegate, U
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red: 229/250, green: 227/250, blue: 201/250, alpha: 1.0)
+        view.backgroundColor = UIColor(named: k.backgroundColor1)
         
         monetButton.image = UIImage(named: k.monet)
         degasButton.image = UIImage(named: k.degas)

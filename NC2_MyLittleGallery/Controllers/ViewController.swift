@@ -21,7 +21,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(red: 180/250, green: 207/250, blue: 176/250, alpha: 1)
+        view.backgroundColor = UIColor(named: k.backgroundColor2)
                 
         imageOne.image = UIImage(named: "waterlily1")
         imageTwo.image = UIImage(named: "waterlily2")

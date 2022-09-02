@@ -21,4 +21,8 @@ class K {
     let pissarro = "Pissarro"
     let morisot = "Morisot"
     let sisley = "Sisley"
+    
+    let backgroundColor1 = "backgroundcolor1"
+    let backgroundColor2 = "backgroundcolor2"
+    let fontColor = "fontcolor"
 }
